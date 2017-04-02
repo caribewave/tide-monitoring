@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Create Log command line: ./parse_tide.sh |  awk '{ print systime(),$0; fflush(); }' >> test_tide.log
+
 # Port setting
 stty -F /dev/ttyUSB0 cs7 cstopb -ixon raw speed  9600
 
